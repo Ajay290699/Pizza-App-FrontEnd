@@ -1,0 +1,55 @@
+<!-- <div>
+    <h1>Pizza-Menu</h1>
+    <div>
+        <ul class="card">
+            <li *ngFor="let pizza of pizza" >
+                <div>
+                    <img class="image" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg"
+                        alt="pizza image">
+                    <h4>{{pizza.pizzaId}}</h4>
+                    <h4>{{pizza.pizzaName}}</h4>
+                    <h4>${{pizza.pizzaPrice}}</h4>
+                    <button (click)="addToCart(pizza)">Add to Cart</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<button (click)="goToCart()">View Cart</button>
+    <router-outlet></router-outlet> -->
+    
+
+    <div>
+        <h1>Menu</h1>
+        <span>
+            <span *ngFor="let pizza of pizza" >
+                <div class="card">
+                    <img class="image" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg"
+                        alt="pizza image"><br>
+                    <span>{{pizza.pizzaId}}</span><br>
+                    <span>{{pizza.pizzaName}}</span><br>
+                    <span>${{pizza.pizzaPrice}}</span><br>
+                    <button (click)="addToCart(pizza)">Add to Cart</button>
+                </div>
+            </span>
+        </span>
+        <button id="btn" (click)="goToCart()">View Cart</button>
+        <router-outlet></router-outlet>
+    </div>
+
+<!-- <mat-card>
+    <mat-card-content>
+        <ul class="card">
+            <li *ngFor="let pizza of pizza" >
+                <div>
+                    <h4>{{pizza.pizzaId}}</h4>
+                    <h4>{{pizza.pizzaName}}</h4>
+                    <h4>${{pizza.pizzaPrice}}</h4>
+                    <button (click)="addToCart(pizza)">Add to Cart</button>
+                </div>
+            </li>
+        </ul>
+    </mat-card-content>
+</mat-card>
+<button (click)="goToCart()">View Cart</button>
+        <router-outlet></router-outlet> -->
